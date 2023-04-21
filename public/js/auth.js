@@ -4,7 +4,7 @@ const submitButton = document.getElementById("submit")
 
 const url = (window.location.hostname == "localhost") 
   ? "http://localhost:8080/api/auth/"
-  : "https://socketchat-node-production.up.railway.app/api/auth"
+  : "https://socketchat-node-production.up.railway.app/api/auth/"
 
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
