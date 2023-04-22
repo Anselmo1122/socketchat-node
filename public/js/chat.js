@@ -76,8 +76,11 @@ const drawUsers = ( users = [] ) => {
 
 const drawMessages = ( messages = [] ) => {
   let messagesHtml = "";
+  let tinkerSound = new Audio("../audio/new-message.mp3");
+  tinkerSound.play();
 
-  messages.forEach( ({ name, message }) => {
+  messages.forEach
+  ( ({ name, message }) => {
     messagesHtml += `
       <li>
         <p>
@@ -86,8 +89,8 @@ const drawMessages = ( messages = [] ) => {
         </p>
       </li>
     `
-  }) 
-
+  })
+  
   ulMessages.innerHTML = messagesHtml;
 }
 
